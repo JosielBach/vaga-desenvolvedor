@@ -28,7 +28,7 @@ services:
     depends_on:
       db:
         condition: service_healthy
-    command: npx nodemon -L src/server.js
+    command: sh -c "npm run db:migrate && npx nodemon -L src/server.js"
 
 volumes:
   db_data:
