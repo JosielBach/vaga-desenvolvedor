@@ -1,0 +1,33 @@
+{
+  "name": "vaga-desenvolvedor",
+  "version": "1.0.0",
+  "description": "Cadastro de pedidos de compra com NodeJS + Express + Sequelize",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest --passWithNoTests"
+  },
+  "author": "Josiel Bach",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^18.0.9",
+    "ejs": "^7.0.2",
+    "express": "^5.3.0",
+    "express-session": "^1.19.0",
+    "jsonwebtoken": "^9.0.3",
+    "mysql2": "^3.24.6",
+    "sequelize": "^6.37.8"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.6.0",
+    "jest": "^30.5.2",
+    "nodemon": "^3.1.14",
+    "sequelize-cli": "^6.6.5"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
